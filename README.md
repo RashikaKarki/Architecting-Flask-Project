@@ -1,6 +1,6 @@
 # Architecting Flask Project
 
-Boilerplate code for organizing flask application using Flask Blueprint
+Sample code for organizing flask application using Flask Blueprint
 
 Approach 1
 
