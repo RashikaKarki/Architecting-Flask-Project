@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Upload Post </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='post/post.css') }}">           
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+          <a href="{{ url_for('authentication.login_user') }}">Logout</a>
+          <div align="center" class="border">
+             <div class="header">
+                <h3 class="word">Logged in as <b>{{user}}</b></h3>
+             </div></br></br></br>
+            <h2 class="word">
+                <form action="{{ url_for('user_post.upload') }}" method="POST">
+                  <div class="msg">{{ msg }}</div>
+                    <input id="post" name="post" type="text" placeholder="Enter Your Post" class="textbox"/></br></br>
+                    <input type="submit" class="btn" value="Upload"></br></br>
+                </form>
+            </h2>
+
+          </div>
+        </div>
+    </body>
+</html>
